@@ -1,0 +1,42 @@
+﻿# Dependencias
+backend/node_modules/
+frontend/node_modules/
+
+# Segredos e configuracoes locais
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Bancos de dados e backups
+backend/*.db
+backend/*.db-*
+backend/*.sqlite
+backend/*.sqlite3
+
+# Arquivos enviados pelos usuarios
+backend/uploads/
+
+# Scripts locais de manutencao
+backend/reset-password.js
+
+# Backups de arquivos
+*.backup*
+*.bak
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Backups adicionais
+*.bak*
+
+# Scripts locais de criacao e migracao de contas
+backend/migrate-roles.js
+backend/src/create-admin.js
+backend/src/create-staff.js

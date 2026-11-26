@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avisos (funcionários)</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body class="pagina-aviso" data-pagina="func-avisos">
+<nav class="menu" id="menu" hidden></nav>
+<main class="quadro">
+<header class="faixa"><button class="botao-menu" type="button" aria-label="Abrir ou fechar menu" aria-controls="menu">☰</button><h1>AVISO</h1></header>
+<div class="sanfona">
+<div class="item">
+  <button class="item-titulo" type="button" aria-expanded="false" aria-controls="encontrados">Materiais Encontrados</button>
+  <ul class="item-lista" id="encontrados" hidden></ul>
+</div>
+<div class="item">
+  <button class="item-titulo" type="button" aria-expanded="false" aria-controls="procura">Materiais à Procura</button>
+  <ul class="item-lista" id="procura" hidden></ul>
+</div>
+<div class="item">
+  <button class="item-titulo" type="button" aria-expanded="false" aria-controls="reclamacoes">Reclamações</button>
+  <ul class="item-lista" id="reclamacoes" hidden></ul>
+</div>
+<div class="item">
+  <button class="item-titulo" type="button" aria-expanded="false" aria-controls="informacoes">Informações</button>
+  <ul class="item-lista" id="informacoes" hidden></ul>
+</div>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

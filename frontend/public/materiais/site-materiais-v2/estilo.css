@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Josefin+Sans:wght@300;400&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --azul: #174195;
+  --amarelo: #ffde59;
+  --gelo: #f4fdff;
+  --cinza: #e1e5e8;
+  --cinza-claro: #f6f6f6;
+  --texto: #000;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+body { min-height: 100vh; background: #fff; color: var(--texto); font-family: 'Open Sans', Arial, sans-serif; }
+img { max-width: 100%; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid #8b3dff; outline-offset: 2px; }
+
+/* ========== LOGIN ========== */
+.pagina-login { font-family: 'Barlow', Arial, sans-serif; }
+.login { max-width: 370px; margin: 0 auto; padding: 42px 40px; display: flex; flex-direction: column; align-items: center; gap: 56px; }
+.cartao {
+  width: 100%; padding: 22px 24px 14px; border: 3px solid #fff; border-radius: 22px;
+  background: linear-gradient(135deg, #f1f1f1 30%, #fbfbfb 55%, #ececec 75%);
+  box-shadow: 0 3px 12px rgba(0,0,0,.12);
+  display: flex; flex-direction: column; text-align: center;
+}
+.cartao h1 { color: var(--azul); font-size: 44px; font-weight: 700; margin-bottom: 24px; }
+.cartao input {
+  width: 100%; height: 34px; margin-bottom: 9px; padding: 0 8px;
+  background: #a6a6a6; border: 1px solid #000; border-radius: 9px;
+  color: #000; font-size: 14px; font-weight: 600;
+}
+.cartao input::placeholder { color: #fff; }
+.botao-login {
+  height: 32px; margin-top: 22px; border: 0; border-radius: 7px;
+  background: var(--azul); color: #fff; font-size: 13px; font-weight: 700;
+}
+.link-cadastro { margin-top: 8px; color: #6b6b6b; font-size: 14px; text-decoration: none; }
+.logo-login { width: 204px; }
+.nota { font-size: 12px; color: #666; text-align: center; }
+
+/* ========== AVISO ========== */
+.pagina-aviso { font-family: 'Josefin Sans', 'Century Gothic', sans-serif; }
+.quadro { max-width: 515px; min-height: 100vh; margin: 0 auto; background: var(--gelo); border: 2px solid #000; }
+.faixa { position: relative; background: var(--azul); color: #fff; text-align: center; padding: 14px; border-radius: 0 0 9px 9px; }
+.faixa h1 { font-size: 32px; font-weight: 400; }
+.faixa .botao-menu { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); }
+.sanfona { width: 226px; max-width: 100%; margin-top: 46px; }
+.item { margin-bottom: 16px; }
+.item-titulo {
+  display: block; width: 100%; height: 45px; padding: 0 15px; text-align: left;
+  background: #fff; border: 2.5px solid #000; font-size: 16px; color: #000;
+}
+.item-lista {
+  list-style: none; margin: -2px 16px 0; padding: 8px 8px 8px 12px;
+  background: var(--amarelo); border: 2.5px solid #000; font-size: 14px; line-height: 1.5;
+}
+
+/* ========== TOPO E MENU ========== */
+.topo { display: flex; align-items: center; gap: 12px; height: 46px; padding: 0 22px 0 8px; background: var(--cinza); }
+.topo h1 { font-size: clamp(20px, 4vw, 28px); font-weight: 400; flex: 1; }
+.logo-topo { height: 32px; font-size: 12px; }
+.botao-menu { background: none; border: 0; color: #fff; font-size: 28px; line-height: 1; }
+.menu { position: fixed; inset: 0 auto 0 0; z-index: 10; width: 240px; padding: 20px; background: var(--azul); box-shadow: 4px 0 16px rgba(0,0,0,.25); }
+.menu a, .menu button { display: block; width: 100%; padding: 12px 0; background: none; border: 0; color: #fff; font-size: 17px; text-align: left; text-decoration: none; }
+
+/* ========== MATERIAL DO ALUNO ========== */
+.material { display: grid; grid-template-columns: minmax(0, 448px) minmax(0, 252px); justify-content: center; gap: 19px; padding: 90px 20px 40px; }
+.area-imagem { display: grid; place-items: center; aspect-ratio: 448 / 290; background: var(--cinza); overflow: hidden; color: #555; }
+.area-imagem img { width: 100%; height: 100%; object-fit: contain; }
+.acoes { display: flex; flex-wrap: wrap; gap: 17px; margin-top: 15px; }
+.botao { padding: 4px 11px; min-height: 30px; background: var(--azul); border: 0; color: #fff; font-size: 15px; }
+.campos { display: flex; flex-direction: column; }
+.campos label { font-size: 13px; margin: 3px 0; }
+.campos textarea, .caixa-id { width: 100%; background: var(--cinza-claro); border: 2px solid transparent; padding: 8px; }
+.campos textarea { height: 102px; resize: vertical; }
+.campos textarea:focus { border-color: #8b3dff; outline: 0; }
+.caixa-id { min-height: 164px; display: grid; place-items: center; text-align: center; font-size: 22px; }
+.rodape { padding: 80px 14px 12px; font-size: 15px; }
+
+/* ========== ADICIONAR IMAGEM ========== */
+.pagina-adicionar { font-family: 'Josefin Sans', 'Century Gothic', sans-serif; }
+.titulo-grande { display: flex; align-items: center; gap: 12px; padding: 14px 20px; }
+.titulo-grande h1 { font-size: clamp(28px, 5vw, 46px); font-weight: 300; text-transform: uppercase; }
+.titulo-grande .botao-menu { color: var(--azul); }
+.adicionar { display: grid; grid-template-columns: minmax(0, 687px) minmax(0, 415px); justify-content: center; gap: 12px; padding: 60px 20px 30px; }
+.adicionar .area-imagem { aspect-ratio: 687 / 379; border: 5px solid #000; }
+.adicionar .area-imagem img { object-fit: cover; }
+.painel { background: var(--cinza); min-height: 200px; }
+.botao-grande { margin: 28px 0 0 58px; padding: 8px 10px 5px; font-size: 24px; }
+
+/* ========== CELULAR ========== */
+@media (max-width: 720px) {
+  .material, .adicionar { grid-template-columns: minmax(0, 1fr); padding-top: 24px; }
+  .botao-grande { margin-left: 0; }
+  .rodape { padding-top: 24px; }
+}
+
+/* ========== SISTEMA ========== */
+.cartao select { height: 34px; margin-bottom: 9px; border: 1px solid #000; border-radius: 9px; padding: 0 6px; }
+.botao-link { margin-top: 8px; background: none; border: 0; color: #555; font-size: 14px; }
+.erro { color: #a40000; font-size: 13px; min-height: 18px; }
+.formulario { display: flex; flex-direction: column; gap: 8px; }
+.formulario input, .formulario textarea, .formulario select { width: 100%; padding: 8px; background: #fff; border: 1px solid #777; font: inherit; }
+.painel { padding: 16px; }
+.botao:disabled { opacity: .5; cursor: default; }
+.sanfona { width: 100%; padding-bottom: 24px; }
+.item-titulo { width: 226px; max-width: 100%; }
+.item-lista { max-width: 420px; }
+.item-lista li { padding: 4px 0; overflow-wrap: anywhere; }
+.item-lista img, .cartoes img { display: block; max-height: 120px; margin: 4px 0; }
+.mini { margin: 2px 4px 2px 0; padding: 1px 7px; background: #fff; border: 1.5px solid #000; font-size: 12px; }
+.item-lista .formulario { padding-top: 8px; }
+.secao { padding: 20px 16px; }
+.cartoes { list-style: none; display: grid; gap: 8px; margin-top: 8px; }
+.cartoes li { padding: 8px 12px; background: var(--amarelo); border: 2.5px solid #000; overflow-wrap: anywhere; }
+.fila { max-width: 720px; margin: 24px auto 0; padding: 0 20px; }
+.quadro h2 { font-size: 20px; font-weight: 400; }

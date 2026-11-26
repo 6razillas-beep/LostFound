@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avisos do aluno</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body class="pagina-aviso" data-pagina="aluno-avisos">
+<nav class="menu" id="menu" hidden></nav>
+<main class="quadro">
+<header class="faixa"><button class="botao-menu" type="button" aria-label="Abrir ou fechar menu" aria-controls="menu">☰</button><h1>AVISO</h1></header>
+<section class="secao">
+  <form class="formulario" id="form-mensagem">
+    <label>Tipo<select name="tipo"><option value="reclamacao">Reclamação</option><option value="informacao">Informação</option></select></label>
+    <label>Mensagem<textarea name="texto" rows="4" maxlength="400" required></textarea></label>
+    <button class="botao">Enviar aos funcionários</button>
+    <p id="retorno" role="status"></p>
+  </form>
+</section>
+<section class="secao"><h2>Meus materiais</h2><ul class="cartoes" id="meus-itens"></ul></section>
+<section class="secao"><h2>Minhas mensagens</h2><ul class="cartoes" id="minhas-mensagens"></ul></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

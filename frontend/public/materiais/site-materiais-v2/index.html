@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body class="pagina-login" data-pagina="login">
+<main class="login">
+<form class="cartao" id="form-login">
+  <h1 id="titulo">LOGIN</h1>
+
+  <input name="usuario" type="email" placeholder="Email" aria-label="Email" autocomplete="email" required>
+  <input name="senha" type="password" placeholder="Senha" aria-label="Senha" minlength="8" autocomplete="current-password" required>
+
+  <div id="extra" hidden>
+    <input name="nome" type="text" placeholder="Nome completo" aria-label="Nome completo" minlength="2" autocomplete="name">
+  </div>
+
+  <p class="erro" id="erro" role="alert"></p>
+
+  <button class="botao-login" id="enviar">LOGIN</button>
+  <button class="botao-link" type="button" id="alternar">[SIGN UP]</button>
+</form>
+<img class="logo-login" src="sesi.png" alt="SESI">
+</main>
+<script src="script.js"></script>
+</body>
+</html>

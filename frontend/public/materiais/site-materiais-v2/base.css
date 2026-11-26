@@ -1,0 +1,34 @@
+/* base.css - estilo independente, para usar com o HTML e JS de vocês.
+   Use no lugar do estilo.css e adicione as classes aos seus elementos.
+
+   .faixa        barra azul de título
+   .cartao       caixa clara (ex.: login)
+   .campo        input ou textarea
+   .botao        botão azul
+   .caixa        botão branco com borda preta (itens do aviso)
+   .lista        lista amarela
+   .area-imagem  espaço da imagem
+   .colunas      duas colunas (uma no celular)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Open+Sans:wght@400;600&display=swap');
+
+:root { --azul: #174195; --amarelo: #ffde59; --gelo: #f4fdff; --cinza: #e1e5e8; --cinza-claro: #f6f6f6; }
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; font-family: 'Open Sans', Arial, sans-serif; color: #000; background: #fff; }
+img { max-width: 100%; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid #8b3dff; outline-offset: 2px; }
+
+.faixa { background: var(--azul); color: #fff; text-align: center; padding: 14px; border-radius: 0 0 9px 9px; font-family: 'Josefin Sans', sans-serif; }
+.faixa h1 { margin: 0; font-weight: 400; }
+.cartao { max-width: 330px; margin: 24px auto; padding: 24px; border-radius: 22px; background: var(--cinza-claro); box-shadow: 0 3px 12px rgba(0,0,0,.12); display: flex; flex-direction: column; gap: 10px; }
+.campo { width: 100%; padding: 8px; border: 1px solid #000; border-radius: 9px; background: var(--cinza-claro); }
+.botao { display: inline-block; padding: 7px 12px; border: 0; background: var(--azul); color: #fff; }
+.caixa { display: block; width: 100%; max-width: 226px; padding: 11px 15px; background: #fff; border: 2.5px solid #000; text-align: left; color: #000; }
+.lista { list-style: none; max-width: 194px; margin: 0 16px; padding: 8px 12px; background: var(--amarelo); border: 2.5px solid #000; }
+.area-imagem { display: grid; place-items: center; aspect-ratio: 3 / 2; background: var(--cinza); overflow: hidden; }
+.area-imagem img { width: 100%; height: 100%; object-fit: contain; }
+.colunas { display: grid; grid-template-columns: 2fr 1fr; gap: 19px; max-width: 960px; margin: 0 auto; padding: 24px; }
+@media (max-width: 720px) { .colunas { grid-template-columns: 1fr; } }

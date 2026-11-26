@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Material do aluno</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body class="pagina-adicionar" data-pagina="aluno-material">
+
+<nav class="menu" id="menu" hidden></nav>
+
+<header class="titulo-grande">
+  <button class="botao-menu" type="button" aria-label="Abrir ou fechar menu" aria-controls="menu">☰</button>
+  <h1>Material do aluno</h1>
+</header>
+
+<main class="adicionar">
+  <section>
+    <div class="area-imagem">
+      <span id="vazio">Nenhuma imagem selecionada</span>
+      <img id="previa" alt="Foto do item" hidden>
+    </div>
+
+    <input type="file" id="arquivo" accept="image/*" hidden>
+
+    <button class="botao botao-grande" type="button" id="escolher">
+      Adicionar imagem 📷
+    </button>
+  </section>
+
+  <aside class="painel">
+    <form class="formulario" id="form-item">
+
+      <label>
+        Nome do material
+        <input name="nome" maxlength="60" required>
+      </label>
+
+      <label>
+        Descrição
+        <textarea name="descricao" rows="6" maxlength="400" required></textarea>
+      </label>
+
+      <label>
+        Categoria
+        <select name="categoria" required>
+          <option value="">Selecione</option>
+          <option value="Mochila">Mochila</option>
+          <option value="Material escolar">Material escolar</option>
+          <option value="Eletrônico">Eletrônico</option>
+          <option value="Roupa">Roupa</option>
+          <option value="Acessório">Acessório</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </label>
+
+      <label>
+        Local da ocorrência
+        <input name="localizacao" maxlength="150" required>
+      </label>
+
+      <label>
+        Data da ocorrência
+        <input name="data" type="date" required>
+      </label>
+
+      <label>
+        Tipo de ocorrência
+        <select name="tipo" required>
+          <option value="">Selecione</option>
+          <option value="perdido">Perdi um objeto</option>
+          <option value="encontrado">Encontrei um objeto</option>
+        </select>
+      </label>
+
+      <button class="botao">Enviar à equipe</button>
+
+      <p id="retorno" role="status"></p>
+    </form>
+  </aside>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

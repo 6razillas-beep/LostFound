@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Material do aluno (funcionários)</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body class="pagina-material" data-pagina="func-material">
+<nav class="menu" id="menu" hidden></nav>
+<header class="topo"><button class="botao-menu" type="button" aria-label="Abrir ou fechar menu" aria-controls="menu">☰</button><h1>Material do aluno</h1><img class="logo-topo" src="sesi.png" alt="SESI"></header>
+<section class="fila formulario"><label for="pedido">Item a registrar</label><select id="pedido"></select></section>
+<main class="material">
+<section>
+  <div class="area-imagem"><img id="previa" alt="Foto do item" hidden></div>
+  <input type="file" id="arquivo" accept="image/*" hidden>
+  <div class="acoes">
+    <button class="botao" type="button" id="escolher">Enviar imagem</button>
+    <button class="botao" type="button" id="gerar-id">Atualizar status</button>
+  </div>
+</section>
+<section class="formulario">
+  <label>Nome do material<input id="nome" maxlength="60"></label>
+  <label>Descrição do item<textarea id="descricao" rows="5" maxlength="400"></textarea></label>
+  <label>Situação<select id="situacao"><option>Encontrado</option><option>Procurando</option></select></label>
+  <output class="caixa-id" id="retorno" aria-live="polite"></output>
+</section>
+</main>
+<footer class="rodape"><p>O item será encaminhado e revisado pela equipe de busca de materiais.<br>O aluno poderá acompanhar o andamento.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>

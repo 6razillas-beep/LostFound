@@ -1,0 +1,7 @@
+Abra index.html. Mantenha todos os arquivos na mesma pasta.
+Crie contas em [SIGN UP]. Código de funcionário: SESI-FUNC
+Aluno: aluno-material.html e aluno-avisos.html
+Funcionário: func-avisos.html e func-material.html
+Os dados ficam só no navegador usado (não há servidor).
+estilo.css + script.js são usados pelas páginas; base.css é opcional, para um HTML/JS próprio.
+Logo: salve o logo oficial como sesi.png nesta pasta.
