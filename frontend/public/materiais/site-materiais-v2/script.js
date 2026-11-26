@@ -1,6 +1,6 @@
 
-/* Dados e autenticaÃ§Ã£o sÃ£o conectados ao backend. */
-const API = 'http://localhost:3000/api';
+/* dados e autentição sao conectados ao backend aqui */
+const API = '/api';
 
 const $ = (s) => document.querySelector(s);
 const pagina = document.body.dataset.pagina;
