@@ -16,6 +16,10 @@ Este repositório reúne os materiais utilizados durante o desenvolvimento e a a
 
 6. [Material — Canva](https://www.canva.com/design/DAHcAugXjaU/Rjf7ZMDUmywlB6zave5mEw/edit)
 
+7. [Plataforma de hospedagem do projeto](https://www.cloudflare.com)
+
+8. **Observação:** O projeto não possui um endereço de acesso permanente. O link gerado é temporário e muda sempre que o servidor é iniciado novamente, sendo necessário manter o servidor em execução para que o site fique acessível.
+
 ## Objetivo
 
 Disponibilizar os materiais complementares do projeto para consulta, análise e avaliação.
